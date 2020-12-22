@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.superhero.field_superpower
+    - node.type.superhero
+  module:
+    - user
+id: node.superhero.teaser
+targetEntityType: node
+bundle: superhero
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_superpower: true

@@ -1,0 +1,12 @@
+superhero.page:
+  path: '/hero/{hero}'
+  defaults:
+    _controller: '\Drupal\superhero\Controller\SuperHeroPageController::pageCallback'
+    _title_callback: '\Drupal\superhero\Controller\SuperHeroPageController::titleCallback'
+  requirements:
+    _permission: 'access content'
+    hero: \d+
+  options:
+    parameters:
+      hero:
+        type: entity:node

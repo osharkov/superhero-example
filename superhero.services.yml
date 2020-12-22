@@ -1,0 +1,4 @@
+services:
+  superhero.service:
+    class: Drupal\superhero\Services\SuperheroService
+    arguments: ['@entity_type.manager', '@date.formatter']

@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_superpower
+    - node.type.superhero
+id: node.superhero.field_superpower
+field_name: field_superpower
+entity_type: node
+bundle: superhero
+label: Superpower
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

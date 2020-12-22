@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.superhero.field_superpower
+    - node.type.superhero
+  module:
+    - user
+id: node.superhero.default
+targetEntityType: node
+bundle: superhero
+mode: default
+content:
+  field_superpower:
+    weight: 101
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

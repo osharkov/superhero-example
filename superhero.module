@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains superhero.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function superhero_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the superhero module.
+    case 'help.page.superhero':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Module for displaing superheroes from superhero node bundle.') . '</p>';
+      return $output;
+
+    default:
+  }
+}

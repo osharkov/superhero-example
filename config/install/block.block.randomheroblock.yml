@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - superhero
+id: randomheroblock
+theme: bootstrap_barrio
+region: content
+weight: 0
+provider: null
+plugin: superhero_random_block
+settings:
+  id: superhero_random_block
+  label: 'Random hero block'
+  provider: superhero
+  label_display: visible
+visibility: {  }
